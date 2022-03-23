@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja-JP">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="assets/icon/favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script type="module" src="src/main.js"></script>
+		<title>数字当てゲーム</title>
+	</head>
 
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <script type="module" src="src/main.js"></script>
-        <title>数字当てゲーム</title>
+	<body>
+		<h1>数字当てゲーム</h1>
 
-    </head>
+		<p>
+			１から１００までの数字からランダムに１つ選びます。その数字を１０回以内に当ててください。ヒントとしてあなたの予想が正解より高かったか低かったかを教えます。
+		</p>
 
-    <body>
-        <h1>数字当てゲーム</h1>
+		<div class="form">
+			<label for="guessField">予想を入力してください: </label
+			><input type="text" id="guessField" class="guessField" />
+			<input type="submit" value="予想を確定する" class="guessSubmit" />
+		</div>
 
-        <p>１から１００までの数字からランダムに１つ選びます。その数字を１０回以内に当ててください。ヒントとしてあなたの予想が正解より高かったか低かったかを教えます。</p>
-
-        <div class="form">
-            <label for="guessField">予想を入力してください: </label><input type="text" id="guessField" class="guessField">
-            <input type="submit" value="予想を確定する" class="guessSubmit">
-        </div>
-
-        <div class="resultParas">
-            <p class="guesses"></p>
-            <p class="lastResult"></p>
-            <p class="lowOrHi"></p>
-        </div>
-
-    </body>
-
+		<div class="resultParas">
+			<p class="guesses"></p>
+			<p class="lastResult"></p>
+			<p class="lowOrHi"></p>
+		</div>
+	</body>
 </html>
