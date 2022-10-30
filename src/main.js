@@ -8,7 +8,7 @@ let guessCount = 1
 let resetButton
 
 const checkGuess = () => {
-	let userGuess = Number(guessField.value)
+	const userGuess = Number(guessField.value)
 	if (guessCount === 1) {
 		guesses.textContent = "前回の予想: "
 	}
